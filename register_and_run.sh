@@ -138,7 +138,7 @@ fi
 
 # If $HOST and $PORT0 are defined, export METRICS_SERVER env
 if [ ! -z ${HOST} ] && [ ! -z ${PORT0} ]; then
-    export LISTEN_ADDRESS="$HOST:$PORT0"
+    export LISTEN_ADDRESS=":$PORT0"
 fi
 
 # Start the runner
