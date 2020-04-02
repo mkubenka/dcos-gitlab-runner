@@ -21,6 +21,8 @@ RUN set -eux; \
 # Add wrapper script
 COPY register_and_run.sh /
 
+RUN chmod 0755 /register_and_run.sh
+
 # Expose volumes
 VOLUME ["/var/lib/docker", "/etc/gitlab-runner", "/home/gitlab-runner"]
 
